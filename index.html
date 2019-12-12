@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="이랜드 외식사업부, 커피 프랜차이즈, 스페셜커피, 로스팅팩토리">
+    <title>카페베네</title>
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <!-- 제이쿼리 -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- 폰트어썸: 아이콘 라이브러리 -->
+    <script src="https://kit.fontawesome.com/dc0e088b5a.js" crossorigin="anonymous"></script>
+    <!-- 사용자 자바스크립트 -->
+    <script src="./js/main.js"></script>
+    <!-- slider -->
+    <script src="./js/slider.js"></script>
+    <!--팝업스크립트-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+      
+html, body {  
+    height: 100%;   
+    position: relative;  
+}
+#main{
+    padding: 20px;
+    background: #eee;
+    height: 100%;
+}
+.popup.show {
+    position: absolute;
+    z-index: 999;
+    right: 200px; top: 150px;
+    width: 300px; height: 400px;
+    background: #fff;
+    padding: 1em;
+    background-image: url(./images/popup.jpg);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    display: block;
+}
+.popup{ display: none;}
+    .popup > .close_box{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    /* background: #666;*/
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 5px 1em;
+}
+      
+    </style>
+</head>
+<body>
+        <div class="popup">
+                <div class="close_box">
+                <button id="btn_close">닫기</button>
+            
+                </div>
+            </div>
+
+
+    <header id="main_header">
+        <h1>
+            <a href="index.html">
+                <img src="./images/logo.jpg" alt="카페베네">
+            </a>
+        </h1> 
+        <nav id="main_gnb">
+            <ul id="login">
+                <li><a href="#">Join</a></li>
+                <li><a href="#">FIND A STORE</a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search"></a></li>
+            </ul>
+            <ul class="depth1">
+                <li><a href="#">Caffebene</a>
+                    <ul class="depth2">
+                        <li><a href="./page1-1.html">브랜드스토리</a></li>
+                        <li><a href="#">커피스토리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Menu</a>
+                    <ul class="depth2">
+                        <li><a href="page2-1.html">신메뉴</a></li>
+                        <li><a href="#">인기메뉴</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Community</a>
+                    <ul class="depth2">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Membership</a>
+                    <ul class="depth2">
+                        <li><a href="#">나의멤버쉽</a></li>
+                        <li><a href="#">멤버쉽소개</a></li>
+                    </ul>            
+                </li>
+                <li><a href="#">Store</a>
+                    <ul class="depth2">
+                        <li><a href="#">매장소개</a></li>
+                        <li><a href="page5-2.html">매장찾기</a></li>
+                    </ul> 
+                </li>
+                <li><a href="#">Franchise</a>
+                    <ul class="depth2">
+                        <li><a href="#">가맹점 개설 안내</a></li>
+                        <li><a href="#">가맹점 FAQ</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- END depth1 -->
+        </nav>
+    </header>
+
+    <section id="main_banner">
+        <div class="slider">
+            <img class="show" src="./images/mainbanner1.png" alt="배너1">
+            <img src="./images/mainbanner2.png" alt="배너2">
+            <img src="./images/mainbanner3.jpg" alt="배너3">
+        </div>
+    </section>
+
+
+    <section id="news">
+        <h2><span class="sub_title">Delicious Journey with Caffe Bene</span></h2>
+        <span class="line"></span>
+        <img src="./images/tit_banner.jpg" alt="news_banner">
+        <!-- 우측배너 -->
+        <aside>
+        <img src="./images/newsbanner2.jpg" alt="500/297">
+        <img src="./images/newsbanner3.jpg" alt="500/106">            
+        </aside>
+        <!-- 좌측 글목록 -->
+        <div class="news_list">
+            <h3>카페베네 이벤트</h3>
+            <div class="line"></div>
+            <ul>
+                <li>
+                    <a href="#">베네머그 프리퀸시 EVENT</a>
+                    <span class="date">2019.03.28</span>
+                </li>
+                <li>
+                    <a href="#">카페베네와 필리핀관광부가 함께하는 60초 공모전</a>
+                    <span class="date">2019.07.01</span>
+                </li>
+                <li>
+                    <a href="#">신메뉴 10% 할인쿠폰</a>
+                    <span class="date">2019.10.18</span>
+                </li>
+            </ul>
+            <h3>공지사항</h3>
+            <div class="line"></div>
+            <ul>
+                <li>
+                    <a href="#">12월 베네데이 쿠폰 사용 가능 매장</a>
+                    <span class="date">2019.12.04</span>
+                </li>
+                <li>
+                    <a href="#">카페베네 마일리지 전환 서비스 종료 안내</a>
+                    <span class="date">2019.12.02</span>
+                </li>
+                <li>
+                    <a href="#">카페베네 2020 다이어리 세트 취급 매장 안내</a>
+                    <span class="date">2019.11.06</span>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- SNS -->
+    <section id="sns_gallery">
+        <h2>카페베네 <span class="sub_title">SNS</span></h2>
+        <span class="line"></span>
+        <ul id="sns_photo">
+            <li><a target="_blank" href="http://www.caffebene.co.kr/"><img src="images/sns_photo1.jpg" alt="1"></a></li>
+            <li><a target="_blank"  href="https://www.instagram.com/caffebene_official/?hl=ko"><img src="./images/sns_photo2.jpg" alt="2"></a></li>
+            <li><a target="_blank"  href="https://www.instagram.com/caffebene_official/?hl=ko"><img src="./images/sns_photo3.jpg" alt="3"></a></li>
+            <li><a target="_blank"  href="https://www.instagram.com/caffebene_official/?hl=ko"><img src="./images/sns_photo4.jpg" alt="4"></a></li>
+            <li><a target="_blank"  href="https://www.instagram.com/caffebene_official/?hl=ko"><img src="./images/sns_photo5.jpg" alt="5"></a></li>
+            <li><a target="_blank"  href="https://www.facebook.com/caffebene/"><img src="./images/sns_photo6.jpg" alt="6"></a></li>
+            <li><a target="_blank"  href="https://www.facebook.com/caffebene/"><img src="./images/sns_photo7.jpg" alt="7"></a></li>
+            <li><a target="_blank"  href="https://www.facebook.com/caffebene/"><img src="./images/sns_photo8.jpg" alt="8"></a></li>
+            <li><a target="_blank"  href="https://www.facebook.com/caffebene/"><img src="./images/sns_photo9.jpg" alt="9"></a></li>
+            <li><a target="_blank"  href="https://www.facebook.com/caffebene/"><img src="./images/sns_photo10.jpg" alt="10"></a></li>
+        </ul>
+    </section>
+
+    <!-- footer -->
+    <footer id="main_footer">
+        <h1><img src="./images/footer_logo.jpg" alt="Caffebene"></h1>
+        <p>개인정보 처리방침 | 이용약관 | 회원탈퇴 | 고객센터 1688-4666</p>
+        <address>본사 서울시 성동구 상원1길25 | 대표이사 박혜경 | 사업자등록번호 | 206-86-29161 | 소비자대표번호 1688-4666 | 대표메일 benecs@Caffebene.co.kr</address><br>
+        <p class="copyright">Copyright &copy; by Caffebene. All right Reserved.</p>
+    </footer>
+
+    <script>
+            $(function(){
+            
+                    // 팝업창 표시(기본)
+                    $('.popup').addClass('show');
+                  
+                    // 닫기 버튼 클릭시 팝업장 종료
+                    $('#btn_close').click(function(){
+                      $('.popup').removeClass('show');
+                  
+                    });
+                  
+                  });
+    </script>
+</body>
+</html>

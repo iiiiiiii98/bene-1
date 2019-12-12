@@ -1,0 +1,29 @@
+.slider {
+    position: relative;
+    /* width: 400px; height: 200px; */
+    /* outline: 2px solid red; */
+/*     max-width: 1920px;
+    min-width: 1200px; */
+    padding-bottom: 29.94%;
+    margin: 0 auto;
+  }
+  .slider > img {
+      width: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    /* 전환효과 */
+    left: 0;
+    transition-duration: 1s;
+  }
+  .slider > img.show {
+    opacity: 1;
+  }
+  .indicator {
+    position: absolute;
+    z-index: 99;
+    opacity: 1;
+    border: 1px solid red;
+  }
+  .indicator > a.show {
+    color: red;
